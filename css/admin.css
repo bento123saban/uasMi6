@@ -1,1 +1,93 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+a {
+    text-decoration: none !important;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
 
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.search-box {
+    width: min(250px, 90%);
+    margin: 10px auto;
+    position: relative;
+    background: transparent;
+}
+.search-box input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 4px 15px 4px 7px;
+    outline: none;
+}
+
+.table-box {
+    width:100%;
+    overflow-x: scroll;
+    margin: 20px auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+table {
+    width: auto;
+}
+table thead th {
+    text-align: center;
+    vertical-align: middle;
+    min-width: 100px;
+    background: #ffd700;
+}
+table tr td{
+    min-width: 190px;
+    text-align: center;
+    vertical-align: middle;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.deskripsi {
+    min-width: 400px;
+}
+.deskripsi p{
+    text-align: justify;
+}
+
+
+.form-group {
+    margin: 12px 0;
+}
+.form-group span {
+    margin: 5px 0;
+}
+
+
+
+
+@media (max-width: 700px) {
+    body {
+        padding: 0;
+    }
+
+    .box .tab {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .box .tab a {
+        padding: 4px 10px;
+        border-radius: 5px;
+        background: #124;
+        font-size: 13px;
+    }
+}
